@@ -1,0 +1,185 @@
+body{
+
+    font-family: Arial;
+
+    padding: 30px;
+
+   background:#f8f9fa;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+
+.container{
+    flex: 1;
+}
+
+/* ______________________________ */
+
+.navbar{
+    height: 5rem;
+    background-color: white;
+}
+.fa-clipboard{
+    font-size: 2rem;
+    color: blue;
+}
+
+.nav-link{
+    color: #222222 !important;
+}
+
+.f-info-links, .f-info-socials, .f-info-brand{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.f-info-socials i{
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+
+.f-info-links a{
+    color: #222222 ;
+    text-decoration: none;
+}
+
+.f-info-links a:hover{
+    color: #007bff !important;
+    text-decoration: underline;
+}
+.f-info{
+    height: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: space-evenly;
+    flex-wrap: wrap;
+    text-align: center;
+    background-color: #ebebeb;
+}
+
+.note-card{
+    border: none !important;
+    margin-bottom: 2rem;
+}
+
+.card-img-top{
+    height:18rem;
+    width:100%;
+    object-fit:cover;
+    border-radius:1rem;
+}
+
+.card-body{
+    padding:1rem;
+}
+
+.note-link{
+    text-decoration:none;
+    color:black;
+}
+
+.note-link:hover{
+    color:black;
+}
+
+.card-img-overlay{
+    opacity:0;
+}
+
+.card-img-overlay:hover{
+    opacity:0.2;
+    background:white;
+}
+
+.show-img{
+    height: 50vh;
+}
+
+.show-card{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+
+
+
+.passwordBox{
+    position: relative;
+    width: 100%;
+}
+
+.passwordBox input{
+
+    width: 100%;
+
+    padding: 10px;
+}
+
+.togglePassword{
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-20%);
+    cursor: pointer;
+    z-index: 10;
+}
+
+.alert{
+
+    width: 300px;
+
+    padding: 15px;
+
+    margin-bottom: 20px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    border-radius: 5px;
+
+    color: white;
+}
+
+.success{
+
+    background-color: green;
+}
+
+.error{
+
+    background-color: crimson;
+}
+
+.closeAlert{
+
+    background: none;
+
+    border: none;
+
+    color: white;
+
+    font-size: 18px;
+
+    cursor: pointer;
+}
+
+.input-group .form-control{
+    border-radius: 10px 0 0 10px;
+}
+
+.input-group .btn-primary{
+    border-radius: 0;
+}
+
+.input-group .btn-outline-secondary{
+    border-radius: 0 10px 10px 0;
+}
+

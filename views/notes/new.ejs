@@ -1,0 +1,98 @@
+<% layout('/layouts/boilerplate') %>
+<div class="row mt-3">
+<div class="col-8 offset-2">
+    <br><br>
+<h1>Create New Note</h1>
+
+<form action="/notes" method="POST" enctype="multipart/form-data" novalidate class="needs-validation">
+<div class="mb-3">
+<label for="image" class="form-label">Image Link</label>
+<input
+type="file"
+name="image"
+class="form-control"
+required>
+<div class="invalid-feedback">
+    Please upload an image.
+</div>
+</div>
+
+<div class="mb-3">
+    <label class="form-label">Title</label>
+
+    <input
+        type="text"
+        name="title"
+        class="form-control"
+        required>
+
+    <div class="valid-feedback">
+        Title Looks good!
+    </div>
+</div>
+
+<div class="mb-3">
+    <label class="form-label">Category</label>
+
+    <input
+        type="text"
+        name="category"
+        class="form-control"
+        required>
+
+    <div class="invalid-feedback">
+        Category is required.
+    </div>
+</div>
+
+<div  class="mb-3">
+<label for="description" class="form-label">Description</label>
+<textarea
+name="description"
+rows="8"
+cols="50"
+placeholder="Description"
+class="form-control"
+required>
+</textarea>
+<div class="invalid-feedback">
+    Description is required.
+</div>
+</div>
+
+<div class="row">
+<div  class="mb-3 col-md-4">
+<label for="priority" class="form-label">Priority</label>
+<select name="priority" class="form-control" required>
+<option value="Low">Low</option>
+<option value="Medium">Medium</option>
+<option value="High">High</option>
+</select>
+<div class="invalid-feedback">
+    Please select priority.
+</div>
+</div>
+
+<div  class="mb-3 col-md-8">
+<label for="status" class="form-label">Status</label>
+<select name="status" class="form-control" required>
+<option value="Pending">Pending</option>
+<option value="In Progress">In Progress</option>
+<option value="Completed">Completed</option>
+</select>
+</div>
+<div class="invalid-feedback">
+    Please select status.
+</div>
+</div>
+
+
+<br><br>
+<button type="submit" class="btn btn-primary">Create Note</button>
+</form>
+<br>
+<a href="/notes" class="btn btn-secondary">Back</a>
+<br><br>
+
+</div>
+</div>
